@@ -2,7 +2,6 @@ from flask import Flask
 
 from basic_auth import requires_auth
 import batch_sms
-import secrets
 
 app = Flask(__name__)
 
