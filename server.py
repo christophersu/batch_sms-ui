@@ -1,4 +1,4 @@
-import flask, request, Response
+from flask import Flask, request, Response
 from functools import wraps
 
 import batch_sms
