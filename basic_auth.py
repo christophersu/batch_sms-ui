@@ -1,4 +1,7 @@
+from functools import wraps
 from flask import request, Response
+
+import secrets
 
 def check_auth(username, password):
     """This function is called to check if a username /

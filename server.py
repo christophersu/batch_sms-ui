@@ -1,5 +1,4 @@
 from flask import Flask
-from functools import wraps
 
 from basic_auth import requires_auth
 import batch_sms
@@ -13,4 +12,4 @@ def index():
     return 'Hello World!'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
