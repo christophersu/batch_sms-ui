@@ -29,6 +29,7 @@ def requires_auth(f):
 app = Flask(__name__)
 
 @app.route('/')
+@requires_auth
 def index():
     return 'Hello World!'
 
