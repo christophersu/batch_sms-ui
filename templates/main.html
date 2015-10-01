@@ -25,7 +25,7 @@
         <br><br>
         <label>Subscriber Lists:</label><br>
         {% for list in subscriber_lists %}
-        <label><input type="checkbox" name="vehicle" value="list_id_{{ loop.index }}"> {{ list }}</label><br>
+        <label class="subscriber-list-item"><input type="checkbox" name="vehicle" value="list_id_{{ loop.index }}"> {{ list }}</label><br>
         {% endfor %}
         <br>
         <p><a class="btn btn-md btn-success" href="#" role="button">Send</a></p>

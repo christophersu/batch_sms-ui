@@ -5,6 +5,11 @@ import batch_sms
 
 app = Flask(__name__)
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(app.root_path, 'favicon.ico',
+            mimetype='image/vnd.microsoft.icon')
+
 @app.route('/')
 @requires_auth
 def index():
